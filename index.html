@@ -200,6 +200,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="skills__content">
                         <h3 class="skills__title">Backend Developer</h3>
 
@@ -245,6 +246,8 @@
                             </div>
                         </div>
                     </div>
+
+                    
                 </div>
             </section>
 
@@ -391,22 +394,22 @@
                 </div>
 
                 <div class="work__container container grid">
-                    <div class="work__card mix web">
+                    <div class="work__card mix mobi">
                         <img src="assets/img/work1.jpg" alt="" class="work__img">
                     
-                        <h3 class="work__title">aaa</h3>
+                        <h3 class="work__title">Roam Right</h3>
 
-                        <a href="#" class="work__button">
+                        <a download="" href="assets/pdf/Roam Right - Slide Deck.pdf" class="work__button">
                             View More <i class='bx bxs-right-arrow-alt work__icon'></i>
                         </a>
                     </div>
 
-                    <div class="work__card mix mobi">
+                    <div class="work__card mix web">
                         <img src="assets/img/work2.jpg" alt="" class="work__img">
                     
-                        <h3 class="work__title">Web</h3>
+                        <h3 class="work__title">Polylister</h3>
 
-                        <a href="#" class="work__button">
+                        <a download="" href="assets/pdf/PowerBuff##Polylister.pdf" class="work__button">
                             View More <i class='bx bxs-right-arrow-alt work__icon'></i>
                         </a>
                     </div>
@@ -414,22 +417,13 @@
                     <div class="work__card mix design">
                         <img src="assets/img/work3.jpg" alt="" class="work__img">
                     
-                        <h3 class="work__title">Mobile</h3>
+                        <h3 class="work__title">Mockups</h3>
 
                         <a href="#" class="work__button">
                             View More <i class='bx bxs-right-arrow-alt work__icon'></i>
                         </a>
                     </div>
 
-                    <div class="work__card mix mobi">
-                        <img src="assets/img/work4.jpg" alt="" class="work__img">
-                    
-                        <h3 class="work__title">Design</h3>
-
-                        <a href="#" class="work__button">
-                            View More <i class='bx bxs-right-arrow-alt work__icon'></i>
-                        </a>
-                    </div>
                 </div>
             </section>
 
@@ -474,24 +468,29 @@
 
                     <div class="contact__content">
                         <h3 class="contact__title">Write me your project</h3>
+                        <div class="alert">Your message sent</div>
 
-                        <form action="" class="contact__form">
+                        <form action="" class="contact__form" id="contactForm">
+                            <div class="alert">Your message sent</div>
+                
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Names</label>
-                                <input type="text" placeholder="Insert your name" class="contact__form-input">
+                                <input type="text" id="name" placeholder="Your name...."  class="contact__form-input"/>
                             </div>
-
+                
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Mail</label>
-                                <input type="text"  placeholder="Insert your email" class="contact__form-input">
+                                <input type="email" id="emailid" placeholder="Your Email....." class="contact__form-input" />
                             </div>
-
-                            <div class="contact__form-div contact__form-area">
+                
+                            <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Project</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
+                                <textarea id="msgContent" cols="30" rows="10" placeholder="Message" class="contact__form-input"></textarea>
                             </div>
-
-                            <button class="button">Send Message</button>
+                
+                            <div class="contact__form-div">
+                                <button type="submit" class="button">Submit</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -514,5 +513,7 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="assets/js/mail.js"></script>
     </body>
 </html>
